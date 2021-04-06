@@ -11,7 +11,11 @@ class PicturesController < ApplicationController
 
   def create
     @picture = Picture.new(picture_params)
-    @picture.save
+    if @picture.save
+      redirect_to root_path
+    else
+      render :new
+    end
      
   end
 
@@ -21,6 +25,6 @@ class PicturesController < ApplicationController
 
   private
   def picture_params
-    params.require(:picture).permit(:name, :image, :text).merge(user_id: current_user.id)
+    params.require(:picture).permit(:title, :explanation, :impression, :image).merge(user_id: current_user.id)
   end
 end
