@@ -6,4 +6,5 @@ class User < ApplicationRecord
          validates :favorite, presence: true
          validates :museum, presence: true
          has_many :pictures
+         has_many :comments, dependent: :destroy
 end
