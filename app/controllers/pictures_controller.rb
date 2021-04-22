@@ -1,8 +1,9 @@
 class PicturesController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
+  before_action :move_to_index, except: [:index, :show, :search]
 
   def index
-    @pictures = Picture.includes(:user)
+    @pictures = Picture.all.order("created_at DESC")
   end
 
   def new
@@ -40,12 +41,14 @@ class PicturesController < ApplicationController
     end
   end
 
-  def search
-    @picture = Tweet.search(params[:search])
-  end
-
   private
   def picture_params
     params.require(:picture).permit(:title, :explanation, :impression, :image).merge(user_id: current_user.id)
+  end
+
+  def move_to_index
+    unless user_signed_in?
+      redirect_to action: :index
+    end
   end
 end
