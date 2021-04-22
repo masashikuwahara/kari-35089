@@ -7,4 +7,12 @@ class Picture < ApplicationRecord
   validates :title, presence: true
   validates :explanation, presence: true
   validates :impression, presence: true
+  
+  def self.search(search)
+    if search != ""
+      Picture.where('title LIKE(?)', "%#{search}%")
+    else
+      Picture.all
+    end
+  end
 end

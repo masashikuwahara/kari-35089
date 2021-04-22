@@ -2,9 +2,13 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-         validates :name, presence: true
-         validates :favorite, presence: true
-         validates :museum, presence: true
+         with_options presence: true do
+         validates :name
+         validates :favorite
+         validates :museum
+         end
+         
          has_many :pictures
          has_many :comments, dependent: :destroy
+
 end

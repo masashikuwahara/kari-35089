@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: "pictures#index"
   resources :pictures do
     resources :comments, only: :create
-    member do
+    collection do
       get 'search'
     end
   end
