@@ -2,7 +2,7 @@
   <div class="inner">
     <div class="user__wrapper">
       <h2 class="page-heading">
-        <%= "#{@user.name}さんの情報"%>
+        <%= "#{@user.name}さん"%>
       </h2>
       <table class="table">
         <tbody>
@@ -11,17 +11,17 @@
             <td class="table__col2"><%= @user.name %></td>
           </tr>
           <tr>
-            <th class="table__col1">所属</th>
+            <th class="table__col1">好きな画家</th>
             <td class="table__col2"><%= @user.favorite %></td>
           </tr>
           <tr>
-            <th class="table__col1">役職</th>
+            <th class="table__col1">お気に入りの美術館</th>
             <td class="table__col2"><%= @user.museum %></td>
           </tr>
         </tbody>
       </table>
       <h2 class="page-heading">
-        <%= "#{@user.name}さんのプロトタイプ"%>
+        <%= "#{@user.name}さんの投稿"%>
       </h2>
       <div class="user__card">
         <%= render partial: 'pictures/picture', collection: @user.pictures %>
