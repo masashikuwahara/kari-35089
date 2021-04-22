@@ -1,4 +1,7 @@
 <%= form_with model: @picture, local: true do |f|%>
+
+<%= render 'pictures/error_messages', model: f.object %>
+
   <div class="field">
     <%= f.label :title, "作品名" %><br />
     <%= f.text_field :title, id:"picture_title" %>
