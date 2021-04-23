@@ -1,6 +1,7 @@
 class PicturesController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
   before_action :move_to_index, except: [:index, :show, :search]
+  before_action :set_item, only:[:edit, :show, :destroy]
 
   def index
     @pictures = Picture.all.order("created_at DESC")
@@ -20,13 +21,11 @@ class PicturesController < ApplicationController
   end
 
   def show
-    @picture = Picture.find(params[:id])
     @comment = Comment.new
     @comments = @picture.comments.includes(:user)
   end
 
   def edit
-    @picture = Picture.find(params[:id])
     unless @picture.user_id == current_user.id
       redirect_to action: :index
     end
@@ -41,6 +40,12 @@ class PicturesController < ApplicationController
     end
   end
 
+  def destroy
+    if @picture.destroy
+      redirect_to root_path
+    end
+  end
+
   def search
     @pictures = Picture.search(params[:keyword])
   end
@@ -48,6 +53,10 @@ class PicturesController < ApplicationController
   private
   def picture_params
     params.require(:picture).permit(:title, :explanation, :impression, :image).merge(user_id: current_user.id)
+  end
+
+  def set_item
+    @picture = Picture.find(params[:id])
   end
 
   def move_to_index
