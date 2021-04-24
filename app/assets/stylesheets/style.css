@@ -352,7 +352,7 @@ a {
 }
 
 .search-form .search-input {
-  width: 70%;
+  width: 155px;
   height: 30px;
   margin-right: 10px;
   background-color: #fff;
@@ -369,5 +369,6 @@ a {
   border: #fff;
   border-radius: 5px;
   position: relative;
-  bottom: 10px;
+  bottom: 40px;
+  left: 100px;
 }

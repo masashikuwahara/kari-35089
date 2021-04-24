@@ -6,6 +6,9 @@ class User < ApplicationRecord
          validates :name
          validates :favorite
          validates :museum
+         validates :password
+         validates :password_confirmation
+
          end
          
          has_many :pictures
