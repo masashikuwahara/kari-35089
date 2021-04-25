@@ -1,5 +1,7 @@
-<div class="contents row">
+<div class="search-result">
+<center>
   <% @pictures.each do |picture| %>
     <%= render partial: "picture", locals: { picture: picture } %>
   <% end %>
+  </center>
 </div>
