@@ -1,6 +1,8 @@
 # MyArt
 自分の好きな絵画、または描いた絵を投稿することができます
 
+[![Image from Gyazo](https://i.gyazo.com/7bc56b36be80c879f6a7751a9abd0c0c.png)](https://gyazo.com/7bc56b36be80c879f6a7751a9abd0c0c)
+
 # アプリケーション概要
 ユーザー新規登録後、共有したい絵を説明文とともに投稿することで
 トップページに表示されます。
@@ -17,6 +19,12 @@ https://myartholder.herokuapp.com/
 # テスト用アカウント
 sample@email.com パスワード:111111
 <br>test@gmail.com   パスワード:111111
+
+# 利用方法
+- トップページから新規登録、ログイン
+- ログイン後の投稿するから写真を選択し、概要、感想を記入ののち投稿できる
+- それぞれの詳細ページにコメント欄がありその絵についての感想をコメントできる
+[![Image from Gyazo](https://i.gyazo.com/657d8d97e34f0e1c774fa796ab87e1e7.gif)](https://gyazo.com/657d8d97e34f0e1c774fa796ab87e1e7)
 
 # 目指した課題解決
 お気に入りの画家の絵を共有したい、
