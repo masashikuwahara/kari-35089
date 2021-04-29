@@ -59,16 +59,37 @@ a {
   padding: 0.4em 1.6em;
   font-size: 0.8em;
   color: #ff00ff;
+  background-color: #ffb6c1;
   text-decoration: none;
   user-select: none;
   border: 1px #ff00ff solid;
   border-radius: 3px;
   transition: 0.4s ease;
 }
+
+.nav__btn2{
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 0.8em;
+  color: #9932cc;
+  background-color: #f08080;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #ff00ff solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+}
+
 .nav__btn:hover{
   color: #fff;
   background: #ff7f50;
 }
+
+.nav__btn2:hover{
+  color: #fff;
+  background: #ffd700;
+}
+
 
 .nav__logout{
   display: inline-block;
@@ -110,8 +131,8 @@ a {
   color: #fff;
   text-decoration: none;
   user-select: none;
-  background: #40e0d0;
-  border: 1px #87CEFA solid;
+  background: #ff7f50;
+  border: 1px #ff00ff solid;
   border-radius: 3px;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
   transition: 0.2s ease;
@@ -211,21 +232,22 @@ a {
   color: #fff;
   text-decoration: none;
   user-select: none;
-  background-color: #008b8b;
-  border: 1px #87CEFA solid;
+  background-color: #db7093;
+  border: 1px #191970 solid;
   border-radius: 3px;
   transition: 0.4s ease;
   margin: 0 4px;
 }
 .prototype__btn:hover{
-  color: #fff;
-  background: #00008b;
+  color: #4b0082;
+  background-color: #f0ffff;
+  border: 1px #20b2aa solid;
 }
 
 .prototype__comments{
-  background-color: #f6f6f6;
-  padding: 20px;
-  margin: 28px 0 40px 0;
+  border: 1px #000000 solid;
+  border-radius: 8px;
+
 }
 
 .comments_lists{
