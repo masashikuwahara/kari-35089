@@ -277,15 +277,14 @@ a {
 .table__col1{
   text-align: left;
   font-weight: bold;
-  background: #fafafa;
   border-collapse: collapse;
-  border: 1px solid #f5f5f5;
+  border: 1px solid #000000;
   width: 30%;
   padding: 8px;
 }
 .table__col2{
   text-align: left;
-  border: 1px solid #f5f5f5;
+  border: 1px solid #000000;
   border-collapse: collapse;
   width: 70%;
   padding: 16px 8px;
