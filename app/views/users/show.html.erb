@@ -4,6 +4,7 @@
       <h2 class="page-heading">
         <%= "#{@user.name}さん"%>
       </h2>
+      <%= render partial: 'pictures/follow_button', locals: { user: @user } %>
       <table class="table">
         <tbody>
           <tr>
