@@ -12,10 +12,6 @@
 # URL
 https://myartholder.herokuapp.com/
 
-# Basic認証
-ユーザー名: admin
-パスワード : 2222
-
 # テスト用アカウント
 sample@email.com パスワード:111111
 <br>test@gmail.com   パスワード:111111
