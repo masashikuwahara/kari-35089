@@ -4,6 +4,11 @@
       <h2 class="page-heading">
         <%= "#{@user.name}さん"%>
       </h2>
+      <% if user_signed_in? && @user == current_user %>
+        <div class="picture__manage">
+          <%= link_to "編集する", edit_user_path(@user), class: :picture__btn %>
+          </div>
+        <% end %>
       <table class="table">
         <tbody>
           <tr>
