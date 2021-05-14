@@ -348,6 +348,48 @@ a {
   .picture_image{
     width: 60%;
   }
+  .search-form {
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  .search-form .search-input {
+    width: 60%;
+    margin-right: 10px;
+  }
+  
+  .search-form .search-btn {
+    width: 30%;
+    background-color: white;
+    border-radius:10px;
+  }
+  
+  .search-form {
+    text-align: center;
+    padding-top: 32px;
+  }
+  
+  .search-form .search-input {
+    width: 155px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: #fff;
+    border: #fff;
+    border-radius: 5px;
+    position: relative;
+    bottom: 10px;
+  }
+  
+  .search-form .search-btn {
+    width: 23%;
+    height: 30px;
+    color: #3b4043;
+    border: #fff;
+    border-radius: 5px;
+    position: relative;
+    bottom: 40px;
+    left: 100px;
+  }
 }
 
  /* スマホ表示 */
@@ -373,6 +415,48 @@ a {
   }
   .table{
     width: 100%;
+  }
+  .search-form {
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  .search-form .search-input {
+    width: 60%;
+    margin-right: 10px;
+  }
+  
+  .search-form .search-btn {
+    width: 30%;
+    background-color: white;
+    border-radius:10px;
+  }
+  
+  .search-form {
+    text-align: center;
+    padding-top: 32px;
+  }
+  
+  .search-form .search-input {
+    width: 155px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: #fff;
+    border: #fff;
+    border-radius: 5px;
+    position: relative;
+    bottom: 10px;
+  }
+  
+  .search-form .search-btn {
+    width: 23%;
+    height: 30px;
+    color: #3b4043;
+    border: #fff;
+    border-radius: 5px;
+    position: relative;
+    bottom: 40px;
+    left: 100px;
   }
 }
 
@@ -418,3 +502,4 @@ a {
   bottom: 40px;
   left: 100px;
 }
+
