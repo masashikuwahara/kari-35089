@@ -244,6 +244,31 @@ a {
   border: 1px #20b2aa solid;
 }
 
+.edit__manage{
+  display: flex;
+  justify-content: left;
+  padding-top: 16px;
+}
+
+.edit__btn{
+  display: block;
+  padding: 2em 4em;
+  font-size: 0.4em;
+  color: #fff;
+  text-decoration: none;
+  user-select: none;
+  background-color: #ffdf;
+  border: 1px #191970 solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+  margin: 0 4px;
+}
+.edit__btn:hover{
+  color: #4b0082;
+  background-color: #f0ffff;
+  border: 1px #20b2aa solid;
+}
+
 .picture__comments{
   border: 1px #000000 solid;
   border-radius: 8px;
