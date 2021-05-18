@@ -252,12 +252,12 @@ a {
 
 .edit__btn{
   display: block;
-  padding: 2em 4em;
-  font-size: 0.4em;
-  color: #fff;
+  padding: 0.5em 1em;
+  font-size: 10px;
+  color: #000;
   text-decoration: none;
   user-select: none;
-  background-color: #ffdf;
+  background-color: #b0c4de;
   border: 1px #191970 solid;
   border-radius: 3px;
   transition: 0.4s ease;
